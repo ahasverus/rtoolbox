@@ -25,29 +25,24 @@ You can install the development version from
 remotes::install_github("ahasverus/rtoolbox")
 ```
 
-## Usage
-
-First attach the package `rtoolbox`:
+Then you can attach the package `rtoolbox`:
 
 ``` r
 library("rtoolbox")
 ```
 
-Here is an overview of `rtoolbox` functions:
+## Overview
 
-``` r
-## Identify local git repositories for which changes need to be committed ----
+Here is an overview of `rtoolbox` content:
 
-git_to_commit(path = "~/GitHub")
-
-
-## Detect and add R dependencies (packages) in DESCRIPTION file ----
-
-add_dependencies()                          # R package
-add_dependencies(import = "analysis/")      # Research compendium
-
-?add_dependencies                           # For more information
-```
+| Function               | Description                                                                      |
+|:-----------------------|:---------------------------------------------------------------------------------|
+| `new_package()`        | Creates a new package structure (derived from `usethis::create_package()`)       |
+| `new_compendium()`     | Creates a new compendium structure (derived from `rrtools::create_compendium()`) |
+| `add_dependencies()`   | Adds automatically dependencies in **DESCRIPTION** file                          |
+| `add_github_actions()` | Sets up GitHub Actions (derived from `usethis::use_github_action_*()`)           |
+| `add_badges()`         | Adds common badges in **README.Rmd** (derived from `usethis::use_badge()`)       |
+| `git_to_commit()`      | Checks if all local *git* repositories need to be updated                        |
 
 ## Citation
 
@@ -62,5 +57,3 @@ Please note that the `rtoolbox` project is released with a [Contributor
 Code of
 Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html).
 By contributing to this project, you agree to abide by its terms.
-
-Cheers!
