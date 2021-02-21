@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# rtoolbox
+# rtoolbox <img src="man/figures/hexsticker.png" height="120" align="right"/>
 
 <!-- badges: start -->
 
@@ -45,6 +45,7 @@ git_to_commit(path = "~/GitHub")
 
 add_dependencies()                          # R package
 add_dependencies(import = "analysis/")      # Research compendium
+
 ?add_dependencies                           # For more information
 ```
 
