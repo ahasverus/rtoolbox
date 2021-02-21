@@ -1,0 +1,26 @@
+Package: rtoolbox
+Type: Package
+Title: Utilitaries R Functions
+Version: 1.0.0
+Authors@R: c(
+    person(given   = "Nicolas",
+           family  = "Casajus",
+           role    = c("aut", "cre"),
+           email   = "nicolas.casajus@fondationbiodiversite.fr",
+           comment = c(ORCID = "0000-0002-5537-5294")))
+Description: A collection of miscellaneous R functions for everyday life.
+URL: https://github.com/ahasverus/rtoolbox
+BugReports: https://github.com/ahasverus/rtoolbox/issues
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Depends: 
+    R (>= 4.0)
+Imports: 
+    clisymbols,
+    devtools,
+    gert,
+    stringr,
+    usethis
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
